@@ -2,7 +2,15 @@ require 'omniauth/strategies/oauth2'
 
 module OmniAuth
   module Strategies
-    class Square < OmniAuth::Strategies::OAuth2
+
+    class JobberOAuth2 < OmniAuth::Strategies::OAuth2
+      def callback_url
+        # This is a shameful solution to squareup not liking our localhost.dev development URL
+        (full_host + script_name + callback_path).gsub(".dev", "")
+      end
+    end
+
+    class Square < OmniAuth::Strategies::JobberOAuth2
 
       option :client_options, {
         :site          => 'https://squareup.com/',
