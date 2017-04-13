@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Omniauth::Square::VERSION
   s.authors     = ["Daniel Archer", "Jennifer Aprahamian", "Adam Bouck", "Ray Zane"]
   s.email       = ["me@dja.io", "j.aprahamian@gmail.com", "adam.j.bouck@gmail.com", "raymondzane@gmail.com"]
-  s.homepage    = "https://github.com/danieljacobarcher/omniauth-square"
+  s.homepage    = "https://github.com/dja/omniauth-square"
   s.summary     = %q{Square OAuth strategy for OmniAuth}
   s.description = %q{Square OAuth strategy for OmniAuth}
   s.license           = "MIT"
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency 'omniauth-oauth2', '>= 1.2'
+  s.add_runtime_dependency 'omniauth-oauth2', '>= 1.1.1', '<= 1.4.0'
   s.add_development_dependency 'rspec', '~> 2.7'
   s.add_development_dependency 'rack-test'
   s.add_development_dependency 'simplecov'
