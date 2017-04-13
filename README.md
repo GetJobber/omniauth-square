@@ -4,15 +4,15 @@ This gem contains the Square strategy for OmniAuth.
 
 Square uses the OAuth2 flow, you can read about it here: http://connect.squareup.com
 
-## How To Use It
+## What's in This Fork?
 
-So let's say you're using Rails, you need to add the strategy to your `Gemfile`:
+This fork patches support in for `omniauth-oauth2` up to v1.4.0 as opposed to anything less than v1.3.0.
 
-    gem 'omniauth-square', '~> 1.0.2'
+## How to Use It
 
-You can pull it in directly from github (if you really want to) e.g.:
+You can pull it in directly from github:
 
-    gem 'omniauth-square', :git => 'https://github.com/dja/omniauth-square.git'
+    gem 'omniauth-square', :git => 'https://github.com/grepme/omniauth-square.git'
 
 Once these are in, you need to add the following to your `config/initializers/omniauth.rb`:
 
